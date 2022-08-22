@@ -29,7 +29,7 @@ export const Map3d = () => {
     startRotate();
   }, []);
 
-  const renderedSpgere = (
+  const renderedSphere = (
     <path d={pathGenerator({ type: "Sphere" }) || ""} style={sphereStyle} />
   );
 
@@ -63,7 +63,7 @@ export const Map3d = () => {
     <section>
       <svg width={500} height={500}>
         <g id="g3d">
-          {renderedSpgere}
+          {renderedSphere}
           {renderedPath}
         </g>
       </svg>
